@@ -81,7 +81,7 @@ in
 
 	exec =
 	  ''
-	    ${pkgs.bitlbee}/sbin/bitlbee -F -p ${toString portNumber} \
+	    ${pkgs.bitlbee}/sbin/bitlbee -n -F -p ${toString portNumber} \
 	      -i ${interface} -u bitlbee
 	  '';
       };
